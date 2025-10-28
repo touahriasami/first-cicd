@@ -18,3 +18,6 @@ jobs:
 
       - name: Maven clean&verify
         run: mvn -B -ntp clean verify
+
+      - name: Test
+        run: echo "Hi sami"
