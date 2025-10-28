@@ -9,4 +9,3 @@ jobs:
     steps:
       - name: Test
         run: echo "AmigosCode"
-        run: echo "Hello World"
