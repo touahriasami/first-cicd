@@ -1,6 +1,7 @@
 name: Deploy Workflow
 on:
-  push:
+  # push:
+  pull_request:
     branches:
       - main
 
