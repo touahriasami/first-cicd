@@ -1,23 +1,23 @@
-name: Build workflow
-on:
-  pull_request:
-    branches:
-      - main
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
+# name: Build workflow
+# on:
+#   pull_request:
+#     branches:
+#       - main
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v5
 
-      - name: Setup JDK
-        uses: actions/setup-java@v5
-        with:
-          java-version: 17
-          distribution: "temurin"
+#       - name: Setup JDK
+#         uses: actions/setup-java@v5
+#         with:
+#           java-version: 21
+#           distribution: "temurin"
 
-      - name: Maven clean&verify
-        run: mvn -B -ntp clean verify
+#       - name: Maven clean&verify
+#         run: mvn -B -ntp clean verify
 
-      - name: Test
-        run: echo "Hi sami"
+#       - name: Test
+#         run: echo "Hi sami"
